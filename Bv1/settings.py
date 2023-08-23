@@ -1,3 +1,6 @@
+
+
+
 # Scrapy settings for Bv1 project
 #
 # For simplicity, this file contains only settings considered important or
@@ -62,9 +65,10 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    "Bv1.pipelines.Bv1Pipeline": 300,
-#}
+
+ITEM_PIPELINES = {
+    "Bv1.pipelines.Bv1Pipeline": 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
@@ -91,3 +95,6 @@ ROBOTSTXT_OBEY = True
 REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
+
+
+
